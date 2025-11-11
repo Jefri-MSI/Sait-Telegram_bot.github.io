@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckBot Pro - Создание Telegram ботов на Python</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    <div class="particles"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <div class="logo-icon">🦆</div>
+                <span>DuckBot</span>
+                <span class="logo-beta">Pro</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">О курсе</a></li>
+                <li><a href="#program" class="nav-link">Программа</a></li>
+                <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                <li><a href="cabinet.html" class="nav-btn">Личный кабинет</a></li>
+            </ul>
+            <div class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">🦆 Утка рекомендует!</div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Создай своего</span>
+                        <span class="title-line highlight">Telegram бота</span>
+                        <span class="title-line">вместе с уткой!</span>
+                    </h1>
+                    <p class="hero-subtitle">Эта уточка знает всё о Python и Telegram API! Присоединяйся к курсу и научись создавать крутых ботов, пока утка танцует от радости! 🎉</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">уроков с уткой</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">поддержка</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">веселье</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-glow" onclick="scrollToSection('register')">
+                            <span>Начать танцевать с уткой! 🦆</span>
+                            <div class="btn-shine"></div>
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                            <span>Узнать больше</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="duck-container">
+                        <img src="https://media1.tenor.com/m/05swcPvrcbIAAAAC/utya.gif" alt="Танцующая утка" class="hero-duck-gif">
+                        <div class="duck-message">
+                            <div class="message-bubble">
+                                "Кря! Я научу тебя Python! 🐍"
+                                <div class="message-arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-preview">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="window-title">duck_bot.py</span>
+                            </div>
+                            <div class="code-content">
+                                <code>
+                                    <span class="code-comment"># Утка одобряет этот код! 🦆</span><br>
+                                    <span class="code-keyword">import</span> telebot<br>
+                                    <br>
+                                    <span class="code-variable">bot</span> = telebot.TeleBot(<span class="code-string">"YOUR_TOKEN"</span>)<br>
+                                    <br>
+                                    <span class="code-decoration">@bot</span>.message_handler(<span class="code-param">commands</span>=[<span class="code-string">'duck'</span>])<br>
+                                    <span class="code-keyword">def</span> <span class="code-function">send_duck</span>(message):<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;bot.send_message(<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message.chat.id,<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Кря-кря! 🦆"</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;)
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="about" class="features">
+        <div class="container">
+            <h2 class="section-title">Почему учиться с уткой веселее? 🦆</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💃</div>
+                    <h3>Танцующие уроки</h3>
+                    <p>Наши уроки такие же зажигательные, как эта утка! Скучно не будет - гарантируем!</p>
+                    <div class="feature-glow"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🐍</div>
+                    <h3>Python от утки</h3>
+                    <p>Утка обожает Python и научит тебя всему, что знает сама. От базового синтаксиса до сложных ботов!</p>
+                    <div class="feature-glow"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Боты с характером</h3>
+                    <p>Создавай ботов с индивидуальностью! Научим делать их такими же яркими, как наша уточка.</p>
+                    <div class="feature-glow"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎉</div>
+                    <h3>Сообщество уток</h3>
+                    <p>Присоединяйся к нашему чату, где все такие же весёлые и увлечённые, как эта танцующая утка!</p>
+                    <div class="feature-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="program">
+        <div class="container">
+            <h2 class="section-title">Чему научит утка? 📚</h2>
+            <div class="program-grid">
+                <div class="module-card">
+                    <div class="module-header">
+                        <span class="module-number">01</span>
+                        <span class="module-badge">Бесплатно</span>
+                    </div>
+                    <h3>Основы Python</h3>
+                    <ul class="module-lessons">
+                        <li>🦆 Синтаксис и типы данных</li>
+                        <li>💃 Функции и модули</li>
+                        <li>🎉 Работа с файлами</li>
+                        <li>🐍 ООП на практике</li>
+                    </ul>
+                    <button class="btn btn-outline">Начать с уткой!</button>
+                </div>
+                <div class="module-card">
+                    <div class="module-header">
+                        <span class="module-number">02</span>
+                        <span class="module-badge">Pro</span>
+                    </div>
+                    <h3>Telegram Bot API</h3>
+                    <ul class="module-lessons">
+                        <li>🤖 Создание первого бота</li>
+                        <li>💬 Команды и кнопки</li>
+                        <li>🖼️ Работа с медиа</li>
+                        <li>🌐 Webhook и сервер</li>
+                    </ul>
+                    <button class="btn btn-primary">Утка ждёт!</button>
+                </div>
+                <div class="module-card">
+                    <div class="module-header">
+                        <span class="module-number">03</span>
+                        <span class="module-badge">Pro</span>
+                    </div>
+                    <h3>Продвинутые техники</h3>
+                    <ul class="module-lessons">
+                        <li>📊 Базы данных</li>
+                        <li>⚡ Асинхронность</li>
+                        <li>🔍 Парсинг данных</li>
+                        <li>🚀 Deploy на сервер</li>
+                    </ul>
+                    <button class="btn btn-primary">Стать про-уткой!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="registration">
+        <div class="container">
+            <div class="registration-card">
+                <div class="registration-content">
+                    <h2>Присоединяйся к утиной команде! 🦆</h2>
+                    <p>Стань частью сообщества, где учат создавать ботов так же круто, как эта утка танцует!</p>
+                    
+                    <form class="registration-form" id="registrationForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Как тебя зовут?</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Твой email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" required>
+                            <label for="password">Секретное слово</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large btn-glow">
+                            <span>Стать уткой! 🦆</span>
+                            <div class="btn-shine"></div>
+                        </button>
+                    </form>
+                    
+                    <div class="registration-benefits">
+                        <div class="benefit">
+                            <span class="benefit-icon">🎁</span>
+                            <span>Первый модуль бесплатно (утка одобряет!)</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">💬</span>
+                            <span>Доступ в утиный Telegram-чат</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">🏆</span>
+                            <span>Сертификат "Профессиональная утка"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">🦆</div>
+                        <span>DuckBot</span>
+                        <span class="logo-beta">Pro</span>
+                    </div>
+                    <p>Обучаем созданию Telegram ботов с 2023 года. С уткой - веселее! 🎉</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Курс</h4>
+                        <a href="#program">Программа</a>
+                        <a href="#about">Преимущества</a>
+                        <a href="#reviews">Отзывы</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Поддержка</h4>
+                        <a href="#">Утиный FAQ</a>
+                        <a href="#">Telegram чат</a>
+                        <a href="#">Связаться с уткой</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DuckBot Pro. Сделано с ❤️ и 🦆</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

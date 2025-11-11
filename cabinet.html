@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - DuckBot Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    <div class="particles"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <div class="logo-icon">🦆</div>
+                <span>DuckBot</span>
+                <span class="logo-beta">Pro</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="course.html" class="nav-link">Курс</a></li>
+                <li><a href="#" id="logoutBtn" class="nav-btn">Выйти</a></li>
+            </ul>
+            <div class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cabinet">
+        <div class="container">
+            <div class="cabinet-header">
+                <h1>Личный кабинет утки 🦆</h1>
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <span id="userInitials">УТ</span>
+                    </div>
+                    <div class="user-details">
+                        <h3 id="userName">Утка-программист</h3>
+                        <p id="userEmail">duck@botmaster.pro</p>
+                        <div class="user-level">
+                            <span class="level-badge">🦆 Начинающая утка</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cabinet-content">
+                <div class="progress-section">
+                    <div class="progress-card">
+                        <h3>Прогресс обучения</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <p class="progress-text">Курс еще не начался</p>
+                        <div class="duck-motivation">
+                            <div class="duck-mini">🦆</div>
+                            <p>"Ждем старта курса! Скоро начнем танцевать с кодом!"</p>
+                        </div>
+                    </div>
+
+                    <div class="status-card">
+                        <div class="status-icon">⏳</div>
+                        <h3>Статус: Ожидание начала</h3>
+                        <p>Курс начнется 15 января 2026 года</p>
+                        <p class="duck-countdown">Утка уже танцует от нетерпения! 💃</p>
+                        <a href="course.html" class="btn btn-primary">Посмотреть программу</a>
+                    </div>
+                </div>
+
+                <div class="materials-section">
+                    <div class="materials-card">
+                        <h3>🦆 Подготовительные материалы от утки</h3>
+                        <ul class="materials-list">
+                            <li class="material-item">
+                                <span class="material-icon">📚</span>
+                                <div class="material-info">
+                                    <h4>Установка Python и настройка окружения</h4>
+                                    <p>Утка подготовила гайд по установке</p>
+                                </div>
+                                <button class="btn btn-outline small">Скачать</button>
+                            </li>
+                            <li class="material-item">
+                                <span class="material-icon">🎥</span>
+                                <div class="material-info">
+                                    <h4>Видео-инструкция "Первые шаги с уткой"</h4>
+                                    <p>Утка покажет, как начать работать</p>
+                                </div>
+                                <button class="btn btn-outline small">Смотреть</button>
+                            </li>
+                            <li class="material-item">
+                                <span class="material-icon">📖</span>
+                                <div class="material-info">
+                                    <h4>Основы Python для уток</h4>
+                                    <p>Специальный гайд от утки-программиста</p>
+                                </div>
+                                <button class="btn btn-outline small">Читать</button>
+                            </li>
+                            <li class="material-item">
+                                <span class="material-icon">💬</span>
+                                <div class="material-info">
+                                    <h4>Доступ в утиный чат</h4>
+                                    <p>Общайся с другими утками-программистами</p>
+                                </div>
+                                <button class="btn btn-primary small">Присоединиться</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="community-card">
+                        <h3>🦆 Утиное сообщество</h3>
+                        <div class="community-stats">
+                            <div class="community-stat">
+                                <div class="stat-number">1500+</div>
+                                <div class="stat-label">уток в чате</div>
+                            </div>
+                            <div class="community-stat">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">поддержка</div>
+                            </div>
+                            <div class="community-stat">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">проектов</div>
+                            </div>
+                        </div>
+                        <p>Присоединяйся к нашему Telegram-чату, где утки делятся опытом и помогают друг другу!</p>
+                        <button class="btn btn-primary">Вступить в чат уток</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        .cabinet {
+            padding: 120px 0 50px;
+            min-height: 100vh;
+        }
+
+        .cabinet-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .cabinet-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .user-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .user-details {
+            text-align: left;
+        }
+
+        .user-details h3 {
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .user-details p {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .level-badge {
+            background: var(--gradient);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .cabinet-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .progress-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .progress-card, .status-card, .materials-card, .community-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .progress-card:hover, .status-card:hover, .materials-card:hover, .community-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .progress-card h3, .status-card h3, .materials-card h3, .community-card h3 {
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient);
+            border-radius: 10px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-text {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .duck-motivation {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: 15px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .duck-mini {
+            font-size: 2rem;
+            animation: duckDance 2s ease-in-out infinite;
+        }
+
+        .status-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .duck-countdown {
+            color: var(--primary);
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+
+        .materials-list {
+            list-style: none;
+        }
+
+        .material-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .material-item:last-child {
+            border-bottom: none;
+        }
+
+        .material-icon {
+            font-size: 1.5rem;
+        }
+
+        .material-info {
+            flex: 1;
+        }
+
+        .material-info h4 {
+            margin-bottom: 0.3rem;
+            color: var(--text-primary);
+        }
+
+        .material-info p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .btn.small {
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+        }
+
+        .community-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 1.5rem 0;
+        }
+
+        .community-stat {
+            text-align: center;
+        }
+
+        .community-stat .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .community-stat .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 768px) {
+            .cabinet-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .user-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .user-details {
+                text-align: center;
+            }
+            
+            .community-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+
+    <script>
+        // Загрузка данных пользователя
+        document.addEventListener('DOMContentLoaded', function() {
+            const userData = JSON.parse(localStorage.getItem('userData'));
+            
+            if (userData) {
+                document.getElementById('userName').textContent = userData.name;
+                document.getElementById('userEmail').textContent = userData.email;
+                
+                // Генерация инициалов для аватара
+                const initials = userData.name.split(' ').map(n => n[0]).join('').toUpperCase();
+                document.getElementById('userInitials').textContent = initials;
+            } else {
+                // Если нет данных, перенаправляем на главную
+                window.location.href = 'index.html';
+            }
+
+            // Выход из аккаунта
+            document.getElementById('logoutBtn').addEventListener('click', function(e) {
+                e.preventDefault();
+                localStorage.removeItem('userData');
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html>
