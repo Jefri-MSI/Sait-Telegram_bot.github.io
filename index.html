@@ -8,17 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Theme Toggle -->
+    <!-- Переключатель темы -->
     <button class="theme-toggle" id="themeToggle">
         <span class="sun">☀️</span>
         <span class="moon">🌙</span>
     </button>
 
-    <!-- Animated Background -->
+    <!-- Анимированный фон -->
     <div class="animated-bg"></div>
     <div class="particles"></div>
 
-    <!-- Header -->
+    <!-- Шапка -->
     <header class="header">
         <nav class="nav">
             <div class="logo">
@@ -29,7 +29,7 @@
             <ul class="nav-links">
                 <li><a href="#about" class="nav-link">О курсе</a></li>
                 <li><a href="#program" class="nav-link">Программа</a></li>
-                <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                <li><a href="#support" class="nav-link">Поддержка</a></li>
                 <li><a href="cabinet.html" class="nav-btn">Личный кабинет</a></li>
             </ul>
             <div class="nav-hamburger">
@@ -40,7 +40,7 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Главный блок -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -54,7 +54,7 @@
                     <p class="hero-subtitle">Эта уточка знает всё о Python и Telegram API! Присоединяйся к курсу и научись создавать крутых ботов, пока утка танцует от радости! 🎉</p>
                     <div class="hero-stats">
                         <div class="stat">
-                            <div class="stat-number">10+</div>
+                            <div class="stat-number">20+</div>
                             <div class="stat-label">уроков с уткой</div>
                         </div>
                         <div class="stat">
@@ -118,14 +118,14 @@
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Преимущества -->
     <section id="about" class="features">
         <div class="container">
             <h2 class="section-title">Почему учиться с уткой веселее? 🦆</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">👀</div>
-                    <h3>Интерестные уроки</h3>
+                    <h3>Интересные уроки</h3>
                     <p>Наши уроки такие же классные, как эта утка! Скучно не будет - гарантируем!</p>
                     <div class="feature-glow"></div>
                 </div>
@@ -151,58 +151,109 @@
         </div>
     </section>
 
-    <!-- Program Section -->
+    <!-- Программа -->
     <section id="program" class="program">
         <div class="container">
-            <h2 class="section-title">Чему научит утка? 📚</h2>
+            <h2 class="section-title">Программа обучения 🎯</h2>
             <div class="program-grid">
                 <div class="module-card">
                     <div class="module-header">
                         <span class="module-number">01</span>
-                        <span class="module-badge">Бесплатно</span>
+                        <span class="module-badge">Python</span>
                     </div>
                     <h3>Основы Python</h3>
+                    <p class="module-description">10 уроков по основам программирования на Python</p>
                     <ul class="module-lessons">
                         <li>🦆 Синтаксис и типы данных</li>
                         <li>💃 Функции и модули</li>
                         <li>🎉 Работа с файлами</li>
                         <li>🐍 ООП на практике</li>
+                        <li>📊 Коллекции данных</li>
                     </ul>
-                    <button class="btn btn-outline">Начать с уткой!</button>
+                    <a href="course.html#python" class="btn btn-outline">Смотреть уроки</a>
                 </div>
                 <div class="module-card">
                     <div class="module-header">
                         <span class="module-number">02</span>
-                        <span class="module-badge">Pro</span>
+                        <span class="module-badge">Telegram</span>
                     </div>
                     <h3>Telegram Bot API</h3>
+                    <p class="module-description">10 уроков по созданию Telegram ботов</p>
                     <ul class="module-lessons">
                         <li>🤖 Создание первого бота</li>
                         <li>💬 Команды и кнопки</li>
                         <li>🖼️ Работа с медиа</li>
                         <li>🌐 Webhook и сервер</li>
+                        <li>📦 Deploy проектов</li>
                     </ul>
-                    <button class="btn btn-primary">Утка ждёт!</button>
-                </div>
-                <div class="module-card">
-                    <div class="module-header">
-                        <span class="module-number">03</span>
-                        <span class="module-badge">Pro</span>
-                    </div>
-                    <h3>Продвинутые техники</h3>
-                    <ul class="module-lessons">
-                        <li>📊 Базы данных</li>
-                        <li>⚡ Асинхронность</li>
-                        <li>🔍 Парсинг данных</li>
-                        <li>🚀 Deploy на сервер</li>
-                    </ul>
-                    <button class="btn btn-primary">Стать про-уткой!</button>
+                    <a href="course.html#telegram" class="btn btn-primary">Изучить ботов</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Registration Section -->
+    <!-- Поддержка -->
+    <section id="support" class="support">
+        <div class="container">
+            <h2 class="section-title">Поддержка утки 🦆</h2>
+            <div class="support-content">
+                <div class="support-info">
+                    <h3>Нужна помощь? Утка рядом!</h3>
+                    <p>Задай любой вопрос о курсе, и наша утка-поддержка ответит тебе в кратчайшие сроки!</p>
+                    <div class="support-features">
+                        <div class="support-feature">
+                            <span class="feature-icon">⚡</span>
+                            <span>Быстрый ответ</span>
+                        </div>
+                        <div class="support-feature">
+                            <span class="feature-icon">🎯</span>
+                            <span>Помощь с кодом</span>
+                        </div>
+                        <div class="support-feature">
+                            <span class="feature-icon">💬</span>
+                            <span>Общение с уткой</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="support-form-container">
+                    <form class="support-form" id="supportForm">
+                        <div class="form-group">
+                            <input type="text" id="supportName" name="name" required>
+                            <label for="supportName">Ваше имя</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="supportEmail" name="email" required>
+                            <label for="supportEmail">Ваш email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <select id="supportTopic" name="topic" required>
+                                <option value="">Выберите тему</option>
+                                <option value="python">Вопрос по Python</option>
+                                <option value="telegram">Вопрос по Telegram ботам</option>
+                                <option value="course">Вопрос по курсу</option>
+                                <option value="technical">Техническая проблема</option>
+                                <option value="other">Другое</option>
+                            </select>
+                            <label for="supportTopic">Тема вопроса</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="supportMessage" name="message" rows="5" required placeholder="Опишите вашу проблему подробно..."></textarea>
+                            <label for="supportMessage">Ваше сообщение</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span>Отправить утке 🦆</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Регистрация -->
     <section id="register" class="registration">
         <div class="container">
             <div class="registration-card">
@@ -252,7 +303,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Подвал -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -269,13 +320,13 @@
                         <h4>Курс</h4>
                         <a href="#program">Программа</a>
                         <a href="#about">Преимущества</a>
-                        <a href="#reviews">Отзывы</a>
+                        <a href="#support">Поддержка</a>
                     </div>
                     <div class="footer-column">
                         <h4>Поддержка</h4>
+                        <a href="#support">Задать вопрос</a>
                         <a href="#">Утиный FAQ</a>
                         <a href="#">Telegram чат</a>
-                        <a href="#">Связаться с уткой</a>
                     </div>
                 </div>
             </div>
@@ -287,5 +338,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>

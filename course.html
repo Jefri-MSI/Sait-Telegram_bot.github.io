@@ -8,17 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Theme Toggle -->
+    <!-- Переключатель темы -->
     <button class="theme-toggle" id="themeToggle">
         <span class="sun">☀️</span>
         <span class="moon">🌙</span>
     </button>
 
-    <!-- Animated Background -->
+    <!-- Анимированный фон -->
     <div class="animated-bg"></div>
     <div class="particles"></div>
 
-    <!-- Header -->
+    <!-- Шапка -->
     <header class="header">
         <nav class="nav">
             <div class="logo">
@@ -29,6 +29,7 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Главная</a></li>
                 <li><a href="cabinet.html" class="nav-link">Личный кабинет</a></li>
+                <li><a href="support.html" class="nav-link">Поддержка</a></li>
                 <li><a href="cabinet.html" class="nav-btn">Мой прогресс</a></li>
             </ul>
             <div class="nav-hamburger">
@@ -41,6 +42,7 @@
 
     <main class="course-page">
         <div class="container">
+            <!-- Заголовок курса -->
             <div class="course-header">
                 <h1>🦆 Программа курса от утки</h1>
                 <div class="course-status">
@@ -50,6 +52,7 @@
                 </div>
             </div>
 
+            <!-- Описание курса -->
             <div class="course-description">
                 <div class="description-card">
                     <h3>Что тебя ждет?</h3>
@@ -75,212 +78,411 @@
                 </div>
             </div>
 
-            <div class="lessons-grid">
-                <!-- Модуль 1 -->
-                <div class="module-section">
-                    <h2 class="module-title">🎯 Модуль 1: Основы Python</h2>
+            <!-- Блок Python -->
+            <section id="python" class="module-section">
+                <div class="module-header">
+                    <h2>🐍 Блок 1: Основы Python (10 уроков)</h2>
                     <p class="module-subtitle">Утка научит тебя основам программирования на Python</p>
-                    
-                    <div class="lessons-list">
-                        <div class="lesson-item" data-lesson="1">
-                            <div class="lesson-header">
-                                <span class="lesson-number">Урок 1</span>
-                                <span class="lesson-status">🦆</span>
+                </div>
+                
+                <div class="lessons-grid">
+                    <!-- Уроки 1-5 -->
+                    <div class="lesson-group">
+                        <h3>Часть 1: Основы</h3>
+                        <div class="lessons-list">
+                            <!-- Урок 1 -->
+                            <div class="lesson-item" data-lesson="1">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 1</span>
+                                    <span class="lesson-status">🦆</span>
+                                </div>
+                                <h3>Знакомство с Python и уткой</h3>
+                                <p>Установка Python, первая программа, основы синтаксиса</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 3 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge free">Бесплатно</span>
+                                    <button class="btn btn-outline" onclick="startLesson(1)">Начать</button>
+                                </div>
                             </div>
-                            <h3>Знакомство с Python и уткой</h3>
-                            <p>Установка Python, первая программа, основы синтаксиса. Утка покажет, как начать!</p>
-                            <div class="lesson-meta">
-                                <span>⏱️ 45 минут</span>
-                                <span>📝 3 задания</span>
-                                <span>🐍 Базовый уровень</span>
+
+                            <!-- Урок 2 -->
+                            <div class="lesson-item" data-lesson="2">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 2</span>
+                                    <span class="lesson-status">🦆</span>
+                                </div>
+                                <h3>Типы данных и переменные</h3>
+                                <p>Утка объяснит про строки, числа, списки и как с ними работать</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 4 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge free">Бесплатно</span>
+                                    <button class="btn btn-outline" onclick="startLesson(2)">Начать</button>
+                                </div>
                             </div>
-                            <div class="lesson-actions">
-                                <span class="lesson-badge free">Бесплатно</span>
-                                <button class="btn btn-outline">Подробнее</button>
+
+                            <!-- Урок 3 -->
+                            <div class="lesson-item" data-lesson="3">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 3</span>
+                                    <span class="lesson-status">🦆</span>
+                                </div>
+                                <h3>Условные операторы</h3>
+                                <p>Утка научит принимать решения в программах</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 5 заданий</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge free">Бесплатно</span>
+                                    <button class="btn btn-outline" onclick="startLesson(3)">Начать</button>
+                                </div>
+                            </div>
+
+                            <!-- Урок 4 -->
+                            <div class="lesson-item" data-lesson="4">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 4</span>
+                                    <span class="lesson-status">🦆</span>
+                                </div>
+                                <h3>Циклы и итерации</h3>
+                                <p>Утка покажет, как автоматизировать повторяющиеся задачи</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 4 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge free">Бесплатно</span>
+                                    <button class="btn btn-outline" onclick="startLesson(4)">Начать</button>
+                                </div>
+                            </div>
+
+                            <!-- Урок 5 -->
+                            <div class="lesson-item" data-lesson="5">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 5</span>
+                                    <span class="lesson-status">🦆</span>
+                                </div>
+                                <h3>Функции</h3>
+                                <p>Утка научит создавать переиспользуемые блоки кода</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 5 заданий</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge free">Бесплатно</span>
+                                    <button class="btn btn-outline" onclick="startLesson(5)">Начать</button>
+                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="lesson-item" data-lesson="2">
-                            <div class="lesson-header">
-                                <span class="lesson-number">Урок 2</span>
-                                <span class="lesson-status">🦆</span>
+                    <!-- Уроки 6-10 -->
+                    <div class="lesson-group">
+                        <h3>Часть 2: Продвинутые темы</h3>
+                        <div class="lessons-list">
+                            <!-- Урок 6 -->
+                            <div class="lesson-item" data-lesson="6">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 6</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Работа с файлами</h3>
+                                <p>Утка покажет, как читать и записывать файлы</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 3 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(6)">Открыть позже</button>
+                                </div>
                             </div>
-                            <h3>Типы данных и переменные</h3>
-                            <p>Утка объяснит про строки, числа, списки и как с ними работать</p>
-                            <div class="lesson-meta">
-                                <span>⏱️ 45 минут</span>
-                                <span>📝 4 задания</span>
-                                <span>🐍 Базовый уровень</span>
-                            </div>
-                            <div class="lesson-actions">
-                                <span class="lesson-badge free">Бесплатно</span>
-                                <button class="btn btn-outline">Подробнее</button>
-                            </div>
-                        </div>
 
-                        <div class="lesson-item" data-lesson="3">
-                            <div class="lesson-header">
-                                <span class="lesson-number">Урок 3</span>
-                                <span class="lesson-status">🦆</span>
+                            <!-- Урок 7 -->
+                            <div class="lesson-item" data-lesson="7">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 7</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>ООП - Объектно-ориентированное программирование</h3>
+                                <p>Утка объяснит классы и объекты</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 4 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(7)">Открыть позже</button>
+                                </div>
                             </div>
-                            <h3>Функции и модули</h3>
-                            <p>Утка научит создавать функции и работать с модулями</p>
-                            <div class="lesson-meta">
-                                <span>⏱️ 45 минут</span>
-                                <span>📝 5 заданий</span>
-                                <span>🐍 Средний уровень</span>
+
+                            <!-- Урок 8 -->
+                            <div class="lesson-item" data-lesson="8">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 8</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Модули и пакеты</h3>
+                                <p>Утка научит организовывать код в модули</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 3 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(8)">Открыть позже</button>
+                                </div>
                             </div>
-                            <div class="lesson-actions">
-                                <span class="lesson-badge free">Бесплатно</span>
-                                <button class="btn btn-outline">Подробнее</button>
+
+                            <!-- Урок 9 -->
+                            <div class="lesson-item" data-lesson="9">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 9</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Обработка ошибок</h3>
+                                <p>Утка покажет, как обрабатывать исключения</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 4 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(9)">Открыть позже</button>
+                                </div>
+                            </div>
+
+                            <!-- Урок 10 -->
+                            <div class="lesson-item" data-lesson="10">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 10</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Финальный проект Python</h3>
+                                <p>Утка поможет создать консольное приложение</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 1 проект</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(10)">Открыть позже</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Модуль 2 -->
-                <div class="module-section">
-                    <h2 class="module-title">🚀 Модуль 2: Telegram Bot API</h2>
+            <!-- Блок Telegram -->
+            <section id="telegram" class="module-section">
+                <div class="module-header">
+                    <h2>🤖 Блок 2: Telegram Bot API (10 уроков)</h2>
                     <p class="module-subtitle">Создаем первого бота вместе с уткой!</p>
-                    
-                    <div class="lessons-list">
-                        <div class="lesson-item" data-lesson="4">
-                            <div class="lesson-header">
-                                <span class="lesson-number">Урок 4</span>
-                                <span class="lesson-status">🔒</span>
+                </div>
+                
+                <div class="lessons-grid">
+                    <!-- Уроки 11-15 -->
+                    <div class="lesson-group">
+                        <h3>Часть 1: Основы ботов</h3>
+                        <div class="lessons-list">
+                            <!-- Урок 11 -->
+                            <div class="lesson-item" data-lesson="11">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 11</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Создание первого бота</h3>
+                                <p>Утка поможет создать твоего первого Telegram бота</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 3 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(11)">Открыть позже</button>
+                                </div>
                             </div>
-                            <h3>Создание первого бота</h3>
-                            <p>Утка поможет создать твоего первого Telegram бота</p>
-                            <div class="lesson-meta">
-                                <span>⏱️ 45 минут</span>
-                                <span>📝 3 задания</span>
-                                <span>🤖 Проект: Приветственный бот</span>
+
+                            <!-- Урок 12 -->
+                            <div class="lesson-item" data-lesson="12">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 12</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Команды и обработчики</h3>
+                                <p>Утка научит создавать команды для бота</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 4 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(12)">Открыть позже</button>
+                                </div>
                             </div>
-                            <div class="lesson-actions">
-                                <span class="lesson-badge pro">Pro</span>
-                                <button class="btn btn-primary">Открыть позже</button>
+
+                            <!-- Урок 13 -->
+                            <div class="lesson-item" data-lesson="13">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 13</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Клавиатуры и кнопки</h3>
+                                <p>Утка покажет, как создавать интерактивные кнопки</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 5 заданий</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(13)">Открыть позже</button>
+                                </div>
+                            </div>
+
+                            <!-- Урок 14 -->
+                            <div class="lesson-item" data-lesson="14">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 14</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Работа с медиа</h3>
+                                <p>Утка научит отправлять фото, видео и документы</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 4 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(14)">Открыть позже</button>
+                                </div>
+                            </div>
+
+                            <!-- Урок 15 -->
+                            <div class="lesson-item" data-lesson="15">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 15</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Inline режим</h3>
+                                <p>Утка объяснит работу inline-ботов</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 3 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(15)">Открыть позже</button>
+                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="lesson-item" data-lesson="5">
-                            <div class="lesson-header">
-                                <span class="lesson-number">Урок 5</span>
-                                <span class="lesson-status">🔒</span>
+                    <!-- Уроки 16-20 -->
+                    <div class="lesson-group">
+                        <h3>Часть 2: Продвинутые боты</h3>
+                        <div class="lessons-list">
+                            <!-- Урок 16 -->
+                            <div class="lesson-item" data-lesson="16">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 16</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Базы данных для бота</h3>
+                                <p>Утка научит работать с SQLite и хранить данные</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 4 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(16)">Открыть позже</button>
+                                </div>
                             </div>
-                            <h3>Команды и кнопки</h3>
-                            <p>Утка научит создавать интерактивные команды и кнопки</p>
-                            <div class="lesson-meta">
-                                <span>⏱️ 45 минут</span>
-                                <span>📝 4 задания</span>
-                                <span>🤖 Проект: Бот с меню</span>
-                            </div>
-                            <div class="lesson-actions">
-                                <span class="lesson-badge pro">Pro</span>
-                                <button class="btn btn-primary">Открыть позже</button>
-                            </div>
-                        </div>
 
-                        <div class="lesson-item" data-lesson="6">
-                            <div class="lesson-header">
-                                <span class="lesson-number">Урок 6</span>
-                                <span class="lesson-status">🔒</span>
+                            <!-- Урок 17 -->
+                            <div class="lesson-item" data-lesson="17">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 17</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Асинхронность</h3>
+                                <p>Утка объяснит асинхронное программирование для ботов</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 3 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(17)">Открыть позже</button>
+                                </div>
                             </div>
-                            <h3>Работа с медиа</h3>
-                            <p>Утка покажет, как отправлять фото, видео и документы</p>
-                            <div class="lesson-meta">
-                                <span>⏱️ 45 минут</span>
-                                <span>📝 3 задания</span>
-                                <span>🤖 Проект: Медиа-бот</span>
+
+                            <!-- Урок 18 -->
+                            <div class="lesson-item" data-lesson="18">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 18</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Webhook и сервер</h3>
+                                <p>Утка покажет, как разместить бота на сервере</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 2 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(18)">Открыть позже</button>
+                                </div>
                             </div>
-                            <div class="lesson-actions">
-                                <span class="lesson-badge pro">Pro</span>
-                                <button class="btn btn-primary">Открыть позже</button>
+
+                            <!-- Урок 19 -->
+                            <div class="lesson-item" data-lesson="19">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 19</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Парсинг данных</h3>
+                                <p>Утка научит собирать данные для бота</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 4 задания</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(19)">Открыть позже</button>
+                                </div>
+                            </div>
+
+                            <!-- Урок 20 -->
+                            <div class="lesson-item" data-lesson="20">
+                                <div class="lesson-header">
+                                    <span class="lesson-number">Урок 20</span>
+                                    <span class="lesson-status">🔒</span>
+                                </div>
+                                <h3>Финальный проект</h3>
+                                <p>Утка поможет создать полноценного бота для портфолио</p>
+                                <div class="lesson-meta">
+                                    <span>⏱️ 45 минут</span>
+                                    <span>📝 1 проект</span>
+                                </div>
+                                <div class="lesson-actions">
+                                    <span class="lesson-badge pro">Pro</span>
+                                    <button class="btn btn-primary" onclick="showLockedLesson(20)">Открыть позже</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Модуль 3 -->
-                <div class="module-section">
-                    <h2 class="module-title">💫 Модуль 3: Продвинутые техники</h2>
-                    <p class="module-subtitle">Стань про-уткой в создании ботов!</p>
-                    
-                    <div class="lessons-list">
-                        <div class="lesson-item" data-lesson="7">
-                            <div class="lesson-header">
-                                <span class="lesson-number">Урок 7</span>
-                                <span class="lesson-status">🔒</span>
-                            </div>
-                            <h3>Базы данных</h3>
-                            <p>Утка научит работать с SQLite и хранить данные</p>
-                            <div class="lesson-meta">
-                                <span>⏱️ 45 минут</span>
-                                <span>📝 4 задания</span>
-                                <span>📊 Проект: Бот с базой данных</span>
-                            </div>
-                            <div class="lesson-actions">
-                                <span class="lesson-badge pro">Pro</span>
-                                <button class="btn btn-primary">Открыть позже</button>
-                            </div>
-                        </div>
-
-                        <div class="lesson-item" data-lesson="8">
-                            <div class="lesson-header">
-                                <span class="lesson-number">Урок 8</span>
-                                <span class="lesson-status">🔒</span>
-                            </div>
-                            <h3>Асинхронность</h3>
-                            <p>Утка объяснит асинхронное программирование</p>
-                            <div class="lesson-meta">
-                                <span>⏱️ 45 минут</span>
-                                <span>📝 3 задания</span>
-                                <span>⚡ Проект: Быстрый бот</span>
-                            </div>
-                            <div class="lesson-actions">
-                                <span class="lesson-badge pro">Pro</span>
-                                <button class="btn btn-primary">Открыть позже</button>
-                            </div>
-                        </div>
-
-                        <div class="lesson-item" data-lesson="9">
-                            <div class="lesson-header">
-                                <span class="lesson-number">Урок 9</span>
-                                <span class="lesson-status">🔒</span>
-                            </div>
-                            <h3>Webhook и сервер</h3>
-                            <p>Утка покажет, как разместить бота на сервере</p>
-                            <div class="lesson-meta">
-                                <span>⏱️ 45 минут</span>
-                                <span>📝 2 задания</span>
-                                <span>🌐 Проект: Бот на сервере</span>
-                            </div>
-                            <div class="lesson-actions">
-                                <span class="lesson-badge pro">Pro</span>
-                                <button class="btn btn-primary">Открыть позже</button>
-                            </div>
-                        </div>
-
-                        <div class="lesson-item" data-lesson="10">
-                            <div class="lesson-header">
-                                <span class="lesson-number">Урок 10</span>
-                                <span class="lesson-status">🔒</span>
-                            </div>
-                            <h3>Финальный проект</h3>
-                            <p>Утка поможет создать полноценного бота для портфолио</p>
-                            <div class="lesson-meta">
-                                <span>⏱️ 45 минут</span>
-                                <span>📝 1 большой проект</span>
-                                <span>🏆 Дипломный проект</span>
-                            </div>
-                            <div class="lesson-actions">
-                                <span class="lesson-badge pro">Pro</span>
-                                <button class="btn btn-primary">Открыть позже</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <!-- Утиное напутствие -->
             <div class="course-notice">
                 <div class="notice-content">
                     <h3>🦆 Утиное напутствие!</h3>
@@ -291,305 +493,8 @@
         </div>
     </main>
 
-    <style>
-        .course-page {
-            padding: 120px 0 50px;
-        }
-
-        .course-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .course-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .status-badge {
-            background: var(--gradient);
-            color: white;
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            font-weight: 600;
-            display: inline-block;
-            margin: 1rem 0;
-        }
-
-        .duck-message {
-            color: var(--primary);
-            font-weight: 600;
-            margin-top: 0.5rem;
-        }
-
-        .course-description {
-            margin-bottom: 3rem;
-        }
-
-        .description-card {
-            background: var(--bg-card);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid var(--border);
-            text-align: center;
-        }
-
-        .description-card h3 {
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .description-card p {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        .duck-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .duck-feature {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1rem;
-            background: rgba(255, 107, 53, 0.1);
-            border-radius: 15px;
-        }
-
-        .feature-emoji {
-            font-size: 2rem;
-        }
-
-        .module-section {
-            margin-bottom: 4rem;
-        }
-
-        .module-title {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-        }
-
-        .module-subtitle {
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-        }
-
-        .lessons-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .lesson-item {
-            background: var(--bg-card);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .lesson-item:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
-        }
-
-        .lesson-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--gradient);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .lesson-item:hover::before {
-            transform: scaleX(1);
-        }
-
-        .lesson-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .lesson-number {
-            font-weight: 600;
-            color: var(--primary);
-        }
-
-        .lesson-status {
-            font-size: 1.2rem;
-        }
-
-        .lesson-item h3 {
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .lesson-item p {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-
-        .lesson-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 1rem 0;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        .lesson-meta span {
-            background: rgba(255, 107, 53, 0.1);
-            padding: 0.3rem 0.6rem;
-            border-radius: 10px;
-        }
-
-        .lesson-actions {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 1.5rem;
-        }
-
-        .lesson-badge {
-            padding: 0.3rem 0.8rem;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .lesson-badge.free {
-            background: rgba(76, 175, 80, 0.2);
-            color: #4caf50;
-        }
-
-        .lesson-badge.pro {
-            background: rgba(255, 107, 53, 0.2);
-            color: var(--primary);
-        }
-
-        .course-notice {
-            background: var(--bg-card);
-            padding: 3rem;
-            border-radius: 20px;
-            border: 1px solid var(--border);
-            text-align: center;
-            margin-top: 3rem;
-        }
-
-        .notice-content h3 {
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .notice-content p {
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-            line-height: 1.6;
-            font-size: 1.1rem;
-        }
-
-        @media (max-width: 768px) {
-            .course-header h1 {
-                font-size: 2rem;
-            }
-            
-            .lessons-list {
-                grid-template-columns: 1fr;
-            }
-            
-            .lesson-actions {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: stretch;
-            }
-            
-            .duck-features {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
-
-    <script>
-        // Добавляем интерактивность урокам
-        document.addEventListener('DOMContentLoaded', function() {
-            const lessonItems = document.querySelectorAll('.lesson-item');
-            
-            lessonItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    const lessonNumber = this.getAttribute('data-lesson');
-                    const isLocked = this.querySelector('.lesson-status').textContent === '🔒';
-                    
-                    if (isLocked) {
-                        showNotification('Этот урок откроется после старта курса! Утка ждет тебя! 🦆', 'info');
-                    } else {
-                        window.location.href = `lessons/lesson${lessonNumber}.html`;
-                    }
-                });
-            });
-        });
-
-        function showNotification(message, type = 'info') {
-            const notification = document.createElement('div');
-            notification.className = `notification notification-${type}`;
-            notification.innerHTML = `
-                <div class="notification-content">
-                    <span class="notification-message">${message}</span>
-                </div>
-            `;
-            
-            notification.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                background: var(--bg-card);
-                color: var(--text-primary);
-                padding: 1rem 1.5rem;
-                border-radius: 10px;
-                border: 1px solid var(--border);
-                box-shadow: var(--shadow);
-                z-index: 10000;
-                transform: translateX(400px);
-                transition: transform 0.3s ease;
-                max-width: 300px;
-            `;
-            
-            document.body.appendChild(notification);
-            
-            setTimeout(() => {
-                notification.style.transform = 'translateX(0)';
-            }, 100);
-            
-            setTimeout(() => {
-                notification.style.transform = 'translateX(400px)';
-                setTimeout(() => {
-                    if (notification.parentNode) {
-                        document.body.removeChild(notification);
-                    }
-                }, 300);
-            }, 3000);
-        }
-    </script>
+    <!-- Подключаем скрипты -->
+    <script src="script.js"></script>
+    <script src="course.js"></script>
 </body>
 </html>
